@@ -48,6 +48,20 @@ module.exports = generators.Base.extend({
       );
     },
 
+    '.tsdrc': function () {
+      this.fs.copyTpl(
+        this.templatePath('tsdrc'),
+        this.destinationPath('.tsdrc')
+      );
+    },
+    
+    'tsd.json': function () {
+      this.fs.copyTpl(
+        this.templatePath('_tsd.json'),
+        this.destinationPath('tsd.json')
+      );
+    },
+
     '.gitignore': function() {
       this.fs.copyTpl(
         this.templatePath('gitignore'),
