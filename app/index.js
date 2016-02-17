@@ -35,27 +35,27 @@ module.exports = generators.Base.extend({
         }
       );
     },
-    
-    'app': function () {
+
+    'app': function() {
       this.fs.copy(
         this.templatePath('src/app/_app.component.ts'),
         this.destinationPath('src/app/app.component.ts')
       );
-      
+
       this.fs.copy(
         this.templatePath('src/app/_main.ts'),
         this.destinationPath('src/app/main.ts')
       );
     },
 
-    '.tsdrc': function () {
+    '.tsdrc': function() {
       this.fs.copyTpl(
         this.templatePath('tsdrc'),
         this.destinationPath('.tsdrc')
       );
     },
-    
-    'tsd.json': function () {
+
+    'tsd.json': function() {
       this.fs.copyTpl(
         this.templatePath('_tsd.json'),
         this.destinationPath('tsd.json')
@@ -116,7 +116,8 @@ module.exports = generators.Base.extend({
           'del': '^2.2.0',
           'gulp': '^3.9.1',
           'gulp-inject': '^3.0.0',
-          'gulp-typescript': '^2.11.0'
+          'gulp-typescript': '^2.11.0',
+          'typescript': '^1.9.0-dev.20160217'
         }
       });
     }
