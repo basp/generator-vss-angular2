@@ -1,4 +1,4 @@
-"use strict";
+'use strict';
 
 const path = require('path');
 const generators = require('yeoman-generator');
@@ -26,13 +26,25 @@ module.exports = generators.Base.extend({
   },
 
   writing: {
-    'index.html': function() {
+    'index': function() {
       this.fs.copyTpl(
         this.templatePath('src/_index.html'),
         this.destinationPath('src/index.html'),
         {
           title: appname
         }
+      );
+    },
+    
+    'app': function () {
+      this.fs.copy(
+        this.templatePath('src/app/_app.component.ts'),
+        this.destinationPath('src/app/app.component.ts')
+      );
+      
+      this.fs.copy(
+        this.templatePath('src/app/_main.ts'),
+        this.destinationPath('src/app/main.ts')
       );
     },
 
@@ -77,6 +89,7 @@ module.exports = generators.Base.extend({
           'es6-promise': '^3.0.2',
           'es6-shim': '^0.33.3',
           'jquery': '^2.2.0',
+          'lodash': '4.5.0',
           'moment': '^2.11.2',
           'reflect-metadata': '0.1.2',
           'rxjs': '5.0.0-beta.0',
@@ -86,6 +99,7 @@ module.exports = generators.Base.extend({
         devDependencies: {
           'browser-sync': '^2.11.1',
           'connect-history-api-fallback': '^1.1.0',
+          'del': '^2.2.0',
           'gulp': '^3.9.1',
           'gulp-inject': '^3.0.0',
           'gulp-typescript': '^2.11.0'
