@@ -1,0 +1,24 @@
+{
+  "name": "generator-vss-angular2",
+  "version": "0.1.0",
+  "description": "Yeoman generator for Angular 2 based applications.",
+  "files": [
+    "app"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/basp/generator-vss-angular2.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/basp/generator-vss-angular2/issues"
+  },
+  "homepage": "https://github.com/basp/generator-vss-angular2#readme",
+  "dependencies": {
+    "yeoman-generator": "^0.22.5"
+  }
+}

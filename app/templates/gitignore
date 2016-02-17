@@ -1,0 +1,13 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# Dependency directory
+node_modules
+
+# Transpiled TypeScript
+src/**/*.js
+
+# Staging directory
+<%= webroot %>
