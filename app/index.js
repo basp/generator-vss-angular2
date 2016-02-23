@@ -98,7 +98,7 @@ module.exports = generators.Base.extend({
           test: 'echo \"Error: no test specified\" && exit 1'
         },
         dependencies: {
-          'angular2': '^2.0.0-beta.6',
+          'angular2': '2.0.0-beta.7',
           'bootstrap': '^3.3.6',
           'es6-promise': '^3.0.2',
           'es6-shim': '^0.33.3',
@@ -106,9 +106,9 @@ module.exports = generators.Base.extend({
           'lodash': '4.5.0',
           'moment': '^2.11.2',
           'reflect-metadata': '0.1.2',
-          'rxjs': '5.0.0-beta.0',
+          'rxjs': '5.0.0-beta.2',
           'systemjs': '^0.19.21',
-          'zone.js': '0.5.14'
+          'zone.js': '0.5.15'
         },
         devDependencies: {
           'browser-sync': '^2.11.1',
