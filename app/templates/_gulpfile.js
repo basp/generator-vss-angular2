@@ -17,9 +17,12 @@ const DEV_DEPENDENCIES = [
   'rxjs/bundles/Rx.js',
   'angular2/bundles/angular2.dev.js',
   'angular2/bundles/router.dev.js',
+  'angular2/bundles/http.dev.js',
   'jquery/dist/jquery.js',
-  'bootstrap/dist/css/bootstrap.css',
-  'bootstrap/dist/js/boostrap.js',
+  'materialize-css/dist/css/materialize.css',
+  'materialize-css/dist/js/materialize.js',
+  // 'bootstrap/dist/css/bootstrap.css',
+  // 'bootstrap/dist/js/boostrap.js',
   'lodash/lodash.js',
   'moment/moment.js'
 ];
@@ -58,6 +61,7 @@ gulp.task('watch', () => {
 
 gulp.task('serve', ['build:dev', 'watch'], () => {
   if (browserSync.active) {
+    // We already have an active browser-sync tab, return early 
     return;
   }
 

@@ -100,6 +100,7 @@ module.exports = generators.Base.extend({
         dependencies: {
           'angular2': '2.0.0-beta.7',
           'bootstrap': '^3.3.6',
+          'material-css': '^0.97.5',
           'es6-promise': '^3.0.2',
           'es6-shim': '^0.33.3',
           'jquery': '^2.2.0',
